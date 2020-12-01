@@ -6,7 +6,7 @@ In this repository you can find the solutions of the puzzles in R Code (supporte
 
 | SAT | MON | TUE | WED | THR | FRD | SAT |
 |:--------:|:------:|:-------:|:---------:|:--------:|:------:|:--------:|
-|          |        |    [`1`](RR/Day-01.md)<br>:star::star:   |     2     |     3    |    4   |     5    |
+|          |        |    [`1`](R/Day-01.md)<br>:star::star:   |     2     |     3    |    4   |     5    |
 |     6    |    7   |    8    |     9     |    10    |   11   |    12    |
 |    13    |   14   |    15   |     16    |    17    |   18   |    19    |
 |    20    |   21   |    22   |     23    |    24    |   25   |          |
