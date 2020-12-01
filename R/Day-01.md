@@ -19,7 +19,7 @@ then multiply those two numbers together.
 
 ``` r
 library(purrr)
-report <- readr::read_lines("Inputs/input_day01.txt") %>% as.numeric()
+report <- readr::read_lines(here::here("Inputs/input_day01.txt")) %>% as.numeric()
 ```
 
 #### Part 1
@@ -47,3 +47,5 @@ map(diffs, ~ intersect(.x - report, report)) %>%
 ```
 
     ## [1] 48914340
+
+[`Previous`](README.md)
