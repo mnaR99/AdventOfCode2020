@@ -4,7 +4,7 @@ Advent of Code is an Advent calendar of small programming puzzles for a variety 
 
 In this repository you can find the solutions of the puzzles in R Code (supported by the `purrr` package). 
 
-| SAT | MON | TUE | WED | THR | FRD | SAT |
+| SUN | MON | TUE | WED | THR | FRD | SAT |
 |:--------:|:------:|:-------:|:---------:|:--------:|:------:|:--------:|
 |          |        |    [`1`](R/Day-01.md)<br>:star::star:   |     2     |     3    |    4   |     5    |
 |     6    |    7   |    8    |     9     |    10    |   11   |    12    |
