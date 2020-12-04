@@ -74,4 +74,4 @@ tidypwds %>%
 
     ## [1] 562
 
-[`Home`](../README.md)
+[`Home`](https://github.com/mnaR99/AdventOfCode2020)
