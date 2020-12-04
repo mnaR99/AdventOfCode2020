@@ -95,4 +95,4 @@ map2_dbl(c(1,3,5,7,1), c(1,1,1,1,2), count_trees) %>%
 
     ## [1] 3584591857
 
-[`Home`](../README.md)
+[`Home`](https://github.com/mnaR99/AdventOfCode2020)
