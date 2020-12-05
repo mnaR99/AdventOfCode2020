@@ -48,18 +48,18 @@ seats <-
   passes %>% 
   stringr::str_split("") %>% 
   map_dbl(
-    function(letter) {
+    function(p_lttr) {
       rnge <- c(0, 127, 0, 7)
     
-      for (i in seq_along(letter)) {
+      for (i in seq_along(p_lttr)) {
         
-        if ( letter[i] == "F" ) {
+        if ( p_lttr[i] == "F" ) {
           rnge[2] <- rnge[2] - 2**(7-i)
         } 
-        else if( letter[i] == "B" ) {
+        else if( p_lttr[i] == "B" ) {
           rnge[1] <- rnge[1] + 2**(7-i)
         } 
-        else if( letter[i] == "L" ) {
+        else if( p_lttr[i] == "L" ) {
           rnge[4] <- rnge[4] - 2**(3-(i-7))
         } 
         else {
