@@ -41,13 +41,12 @@ the highest seat ID on a boarding pass?
 
 ``` r
 library(purrr)
-library(stringr)
 
 passes <- readr::read_lines(here::here("Inputs/input_day05.txt"))
 
 seats <- 
   passes %>% 
-  str_split("") %>% 
+  stringr::str_split("") %>% 
   map_dbl(
     function(letter) {
       rnge <- c(0, 127, 0, 7)
