@@ -48,26 +48,7 @@ seats <-
   passes %>% 
   stringr::str_split("") %>% 
   map_dbl(
-    function(p_lttr) {
-      rnge <- c(0, 127, 0, 7)
-    
-      for (i in seq_along(p_lttr)) {
-        
-        if ( p_lttr[i] == "F" ) {
-          rnge[2] <- rnge[2] - 2**(7-i)
-        } 
-        else if( p_lttr[i] == "B" ) {
-          rnge[1] <- rnge[1] + 2**(7-i)
-        } 
-        else if( p_lttr[i] == "L" ) {
-          rnge[4] <- rnge[4] - 2**(3-(i-7))
-        } 
-        else {
-          rnge[3] <- rnge[3] + 2**(3-(i-7))
-        }
-      }
-      rnge[1] * 8 + rnge[3]
-    }
+    ~ ((.x[1:7] == "B") %*% 2**(6:0)) * 8 + ((.x[8:10] == "R") %*% 2**(2:0))
   )
 
 max(seats)
