@@ -157,11 +157,7 @@ depart at offsets matching their positions in the list?
 
 ``` r
 full_list <- as.numeric(str_split(notes[2], ",", simplify = T))
-```
 
-    ## Warning: NAs introducidos por coerción
-
-``` r
 indices <- which(!is.na(full_list)) - 1
 
 t <- 0; size <- 1
